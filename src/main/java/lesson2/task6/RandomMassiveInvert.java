@@ -33,7 +33,6 @@ public class RandomMassiveInvert {
                     }
         }
 
-
         System.out.println("Исходная матрица");
         for (int[] row : firstMatrix) {
             for (int element : row)
