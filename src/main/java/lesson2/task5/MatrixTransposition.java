@@ -9,15 +9,15 @@ public class MatrixTransposition {
 
         int [][] firstMatrix = new int[m][n];
 
-        for (int x=0; x<m; x++){
-            for (int y=0; y<n; y++){
+        for (int x = 0; x < m; x++){
+            for (int y = 0; y < n; y++){
                 firstMatrix[x][y] = new Random().nextInt(9);
             }
         }
 
         int [][] resultMatrix = new int[n][m];
-        for (int x=0; x<m; x++){
-            for (int y=0; y<n; y++){
+        for (int x = 0; x < n; x++){
+            for (int y = 0; y < m; y++){
                 resultMatrix[x][y] = firstMatrix[y][x];
             }
         }
