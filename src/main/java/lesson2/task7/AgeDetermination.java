@@ -15,20 +15,16 @@ public class AgeDetermination {
         System.out.println(example.ageDetermination(119));
     }
 
-    public String ageDetermination (int age) {
+    public String ageDetermination(int age) {
         String ageToString;
         if (age >= 25 && age < 44) {
             return ageToString = "молодой возраст";
-        }
-        else if (age >= 44 && age < 60) {
+        } else if (age >= 44 && age < 60) {
             return ageToString = "средний возраст";
-        }
-        else if (age >= 60 && age < 75) {
+        } else if (age >= 60 && age < 75) {
             return ageToString = "пожилой возраст";
-        }
-        else if (age >= 75 && age < 90) {
+        } else if (age >= 75 && age < 90) {
             return ageToString = "старческий возраст";
-        }
-        else return ageToString = "неизвестный возраст";
+        } else return ageToString = "неизвестный возраст";
     }
 }

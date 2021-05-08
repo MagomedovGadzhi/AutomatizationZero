@@ -10,8 +10,8 @@ public class SwithWithoutBreaks {
         example.printA(0);
     }
 
-    public void printA (int n) {
-        switch (n){
+    public void printA(int n) {
+        switch (n) {
             case (1):
                 System.out.println("A");
             case (2):
