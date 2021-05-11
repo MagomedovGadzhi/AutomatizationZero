@@ -1,8 +1,8 @@
 package lesson2.task8;
 
-public class SwithWithBreaks {
+public class SwitchWithBreaks {
     public static void main(String[] args) {
-        SwithWithBreaks example = new SwithWithBreaks();
+        SwitchWithBreaks example = new SwitchWithBreaks();
         example.printA(-1);
         example.printA(2);
         example.printA(4);

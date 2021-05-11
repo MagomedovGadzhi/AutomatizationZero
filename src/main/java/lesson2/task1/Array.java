@@ -13,7 +13,9 @@ public class Array {
         for (int index = 0; index < array.length; index++) {
             if (index == array.length - 1) {
                 System.out.println(array[index] + ".");
-            } else System.out.print(array[index] + " ");
+            } else {
+                System.out.print(array[index] + " ");
+            }
         }
     }
 
