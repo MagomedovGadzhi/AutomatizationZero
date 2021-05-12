@@ -24,6 +24,8 @@ public class AgeDetermination {
             return "пожилой возраст";
         } else if (age >= 75 && age < 90) {
             return "старческий возраст";
-        } else return "неизвестный возраст";
+        } else {
+            return "неизвестный возраст";
+        }
     }
 }
