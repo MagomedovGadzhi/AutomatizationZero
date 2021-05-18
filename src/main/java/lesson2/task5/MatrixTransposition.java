@@ -6,6 +6,7 @@ public class MatrixTransposition {
     public static void main(String[] args) {
         int m = new Random().nextInt(3) + 3;
         int n = new Random().nextInt(3) + 3;
+
         int[][] firstMatrix = new int[m][n];
         for (int x = 0; x < m; x++) {
             for (int y = 0; y < n; y++) {

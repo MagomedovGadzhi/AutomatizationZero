@@ -16,7 +16,7 @@ public class RandomMassiveInvert {
         }
         //заполняем случайный элемент(исключая края) двойкой
         int randomLine = new Random().nextInt(m - 2) + 1;
-        ;
+
         int randomColumn = new Random().nextInt(m - 2) + 1;
         firstMatrix[randomLine][randomColumn] = 2;
 
