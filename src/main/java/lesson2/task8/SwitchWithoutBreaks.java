@@ -12,16 +12,17 @@ public class SwitchWithoutBreaks {
 
     public void printA(int n) {
         switch (n) {
-            case (1):
-                System.out.println("A");
-            case (2):
-                System.out.println("AA");
-            case (3):
-                System.out.println("AAA");
-            case (4):
-                System.out.println("AAAA");
             default:
-                System.out.println("AAAAA");
+                System.out.print("A");
+            case 4:
+                System.out.print("A");
+            case 3:
+                System.out.print("A");
+            case 2:
+                System.out.print("A");
+            case 1:
+                System.out.print("A");
         }
+        System.out.println(); //для удобства чтения результата.
     }
 }
