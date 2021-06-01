@@ -6,18 +6,22 @@ public class Application {
         for (int index = 0; index < humans.length; index++) {
             humans[index] = new Human();
         }
-        //Чуть заморочился, чтобы имена при выводе не повторялись.
+
         Human[] similarPeople = new Human[20];
-        for (int index1 = 0; index1 < humans.length; index1++) {
-            for (int index2 = 0; index2 < humans.length; index2++) {
-                if (humans[index1] != humans[index2] && humans[index1].dogsList.length == humans[index2].dogsList.length && humans[index1].catsList.length == humans[index2].catsList.length) {
-                    similarPeople[index1] = humans[index1];
+        int index = 0;
+        for (Human human1 : humans) {
+            for (Human human2 : humans) {
+                if (human1 != human2 && human1.dogsList.length == human2.dogsList.length && human1.catsList.length == human2.catsList.length) {
+                    similarPeople[index] = human1;
+                    index++;
+                    break;
                 }
             }
         }
+
         for (Human example : similarPeople) {
             if (example != null) {
-                System.out.printf("%s: собак = %d, кошек = %d%n", example.name, example.dogsList.length, example.catsList.length);
+                System.out.printf("%d %s: собак = %d, кошек = %d%n", example.ID, example.name, example.dogsList.length, example.catsList.length);
             }
         }
     }

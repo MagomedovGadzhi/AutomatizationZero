@@ -16,13 +16,23 @@ public class Application {
 
         Human[] elenasGrandParents = new Human[4];
         int tempIndex = 0;
-        //Поиск бабушек и дедушек
-        for (int a = 0; a < elena.parents.length; a++) {
-            Human[] parentParents = elena.parents[a].parents;
-            for (int b = 0; b < parentParents.length; b++) {
-                elenasGrandParents[tempIndex++] = parentParents[b];
+
+        //Поиск бабушек и дедушек через foreach
+        for (Human elenaParents : elena.parents) {
+            for (Human grandParent : elenaParents.parents) {
+                elenasGrandParents[tempIndex] = grandParent;
+                tempIndex++;
             }
         }
+        //Поиск бабушек и дедушек через for
+/*
+        for (int i = 0; i < elena.parents.length; i++) {
+            Human[] parentParents = elena.parents[i].parents;
+            for (int j = 0; j < parentParents.length; j++) {
+                elenasGrandParents[tempIndex++] = parentParents[j];
+            }
+        }
+*/
         //Вывод на экран
         for (Human example : elenasGrandParents) {
             if (example != null) {

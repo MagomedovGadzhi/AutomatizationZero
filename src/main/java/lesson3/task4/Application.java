@@ -33,6 +33,6 @@ public class Application {
         for (Human human : second.friends) {
             if (human == first) areFriends++;
         }
-        return areFriends == 2 ? true : false;
+        return areFriends == 2;
     }
 }

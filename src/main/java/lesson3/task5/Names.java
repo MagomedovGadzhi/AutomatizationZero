@@ -7,7 +7,7 @@ public class Names {
     static String[] dogsNames = {"Бобик", "Шарик", "Рекс"};
     static String[] catsNames = {"Мурзик", "Пушок", "Кузя"};
 
-    static String getHumanNames() {
+    static String getHumanName() {
         return humansNames[new Random().nextInt(humansNames.length)];
     }
 
