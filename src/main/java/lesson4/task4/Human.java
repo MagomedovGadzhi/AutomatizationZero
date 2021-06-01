@@ -1,8 +1,5 @@
 package lesson4.task4;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Human {
     private String lastName;
     private String firstName;
