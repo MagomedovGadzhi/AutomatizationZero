@@ -23,8 +23,8 @@ public class Passport {
                         break;
                     }
                     if (passport.series.equals(series) && passport.number.equals(this.number)) {
-                        System.out.printf("Пасспорт с серией %s и номером %s уже существует.%n", series, this.number);
-                        break;
+                        System.out.printf("Ошибка. Паспорт с серией %s и номером %s уже существует.%n", series, this.number);
+                        return this;
                     }
                 }
                 this.series = series;
@@ -40,19 +40,19 @@ public class Passport {
         if (number.matches("^(\\d{6})$")) {
             if (this.series == null) {
                 this.number = number;
-                System.out.printf("Номер паспорта усатновлен: %s%n", number);
+                System.out.printf("Номер паспорта установлен: %s%n", number);
             } else {
                 for (Passport passport : oldPassports) {
                     if (passport == null || passport == this) {
                         break;
                     }
                     if (passport.series.equals(this.series) && passport.number.equals(number)) {
-                        System.out.printf("Пасспорт с серией %s и номером %s уже существует.%n", this.series, number);
-                        break;
+                        System.out.printf("Ошибка. Паспорт с серией %s и номером %s уже существует.%n", this.series, number);
+                        return this;
                     }
                 }
                 this.number = number;
-                System.out.printf("Номер паспорта усатновлен: %s%n", number);
+                System.out.printf("Номер паспорта установлен: %s%n", number);
             }
         } else {
             System.out.println("Ошибка. Номер паспорта должен состоять из 6 цифр");

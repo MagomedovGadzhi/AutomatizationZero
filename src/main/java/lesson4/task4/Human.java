@@ -27,9 +27,9 @@ public class Human {
 
     public Human setPassport(Passport passport) {
         if (passport.getSeries() == null) {
-            System.out.println("Серия паспорта не указана");
+            System.out.println("Ошибка. Паспорт не привязан, т.к. серия паспорта не указана");
         } else if (passport.getNumber() == null) {
-            System.out.println("Номер паспорта не указан");
+            System.out.println("Ошибка. Паспорт не привязан, т.к. номер паспорта не указан");
         } else {
             this.passport = passport;
             System.out.println("Паспорт привязан.");
