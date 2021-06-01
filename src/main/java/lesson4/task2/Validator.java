@@ -1,15 +1,8 @@
 package lesson4.task2;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 public class Validator {
     public static boolean validateStringForSpaces(String line) {
-        int whitespacesCount = 0;
-        for (char c : line.toCharArray()) {
-            if (c == ' ') {
-                whitespacesCount++;
-            }
-        }
+        int whitespacesCount = line.split("\\s").length - 1;
         if (whitespacesCount == 2) {
             System.out.println("Строка соответствует формату.");
             return true;

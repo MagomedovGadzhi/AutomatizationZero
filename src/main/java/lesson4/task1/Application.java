@@ -8,11 +8,11 @@ public class Application {
         Human human = new Human();
         human.setLastName("Иванов");
         human.setFirstName("Иван");
-        human.setBirthDate(simpleDateFormat.parse("01.01.1990"));
+        human.setBirthDate(SIMPLE_DATE_FORMAT.parse("01.01.1990"));
         human.getLastName();
         human.getFirstName();
         human.getBirthDate();
     }
 
-    private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy");
+    private final static SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("dd.MM.yyyy");
 }
