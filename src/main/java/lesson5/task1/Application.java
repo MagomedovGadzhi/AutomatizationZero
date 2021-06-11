@@ -9,8 +9,6 @@ public class Application {
 
         int[] dividends = new int[m];
         int[] dividers = new int[n];
-        int[][] result = new int[n][m];
-
         for (int i = 0; i < m; i++) {
             dividends[i] = new Random().nextInt(6) + 4;
         }
@@ -18,26 +16,27 @@ public class Application {
             dividers[i] = new Random().nextInt(4);
         }
 
+        int[][] result = new int[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 try {
-                    result[j][i] = dividends[i] / dividers[j];
+                    result[i][j] = dividends[i] / dividers[j];
                 } catch (ArithmeticException exception) {
-                    result[j][i] = -1;
+                    result[i][j] = -1;
                 }
             }
         }
 
-        System.out.println("Массив dividends:");
+        System.out.println("Массив dividends(m):");
         for (int dividend : dividends) System.out.print(dividend + " ");
         System.out.println();
-        System.out.println("Массив dividers:");
+        System.out.println("Массив dividers(n):");
         for (int divider : dividers) System.out.print(divider + " ");
         System.out.println();
         System.out.println("Массив result:");
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.print(result[j][i] + " ");
+                System.out.print(result[i][j] + " ");
             }
             System.out.println();
         }
