@@ -6,16 +6,9 @@ import java.util.Map;
 
 public class Application {
     public static void main(String[] args) throws Exception {
-        ArrayList<Person> personsList = new ArrayList<>();
-        ArrayList<Passport> passportsList = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            personsList.add(new Person());
-            passportsList.add(new Passport());
-        }
-
         ThreeHashMap<Integer, Person, Passport> testThreeHashMap = new ThreeHashMap();
         for (int i = 0; i < 10; i++) {
-            testThreeHashMap.put(i, personsList.get(i), passportsList.get(i));
+            testThreeHashMap.put(i, new Person(), new Passport());
         }
 
         Map<Integer, Person> persons = new HashMap<>();
