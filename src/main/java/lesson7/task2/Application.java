@@ -17,7 +17,6 @@ public class Application {
         for (int i = 0; i < 10; i++) {
             testThreeHashMap.put(i, personsList.get(i), passportsList.get(i));
         }
-        System.out.println(testThreeHashMap);
 
         Map<Integer, Person> persons = new HashMap<>();
         Map<Integer, Passport> passports = new HashMap<>();
@@ -25,11 +24,7 @@ public class Application {
             persons.put(i, new Person());
             passports.put(i + 10, new Passport());
         }
-        System.out.println(persons);
-        System.out.println(passports);
 
         testThreeHashMap.putAll(persons, passports);
-
-        System.out.println(testThreeHashMap);
     }
 }
