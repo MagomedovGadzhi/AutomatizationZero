@@ -10,6 +10,7 @@ public class Application {
         test.contains(8);
         test.contains(5);
         test.get(-6);
+        test.get(10);
         test.get(1);
         test.size();
     }

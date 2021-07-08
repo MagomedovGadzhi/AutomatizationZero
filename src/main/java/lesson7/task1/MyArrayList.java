@@ -30,18 +30,17 @@ public class MyArrayList<T> extends ArrayList<T> {
         try {
             object = super.get(index);
         } catch (IndexOutOfBoundsException exception) {
-        } finally {
-            System.out.println("Получен объект " + object + " из списка");
-            return object;
         }
+        System.out.println("Получен объект " + object + " из списка");
+        return object;
     }
 
     @Override
     public void add(int index, T element) {
         if (index >= super.size() || index<0) {
             index = 0;
-            super.add(index, element);
-        } else super.add(index, element);
+        }
+        super.add(index, element);
         System.out.printf("Добавлен объект %s в список на позицию %d.%n", element, index);
     }
 }
