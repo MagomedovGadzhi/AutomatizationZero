@@ -4,9 +4,9 @@ import java.util.List;
 
 public class Application {
     public static void main(String[] args) {
-        double amount = 1000000;
-        double rate = 8.5;
-        int duration = 24;
+        double amount = 300_000d;
+        double rate = 16.9d;
+        int duration = 12;
 
         BaseCredit baseCredit = new BaseCredit(amount, rate, duration);
         BaseCredit differentiateCredit = new DifferentiateCredit(amount, rate, duration);
@@ -22,7 +22,6 @@ public class Application {
             System.out.printf("%d: %.2f, %.2f, %.2f %n", i + 1, baseGraph.get(i), difGraph.get(i), baseAnnuit.get(i));
         }
 
-        System.out.printf("Переплата по каждому кредиту:%n %.2f  %.2f  %.2f",
-                baseCredit.calculateOverpayment(), differentiateCredit.calculateOverpayment(), annuityCredit.calculateOverpayment());
+        System.out.printf("Переплата по каждому кредиту:%n %.2f  %.2f  %.2f", baseCredit.calculateOverpayment(), differentiateCredit.calculateOverpayment(), annuityCredit.calculateOverpayment());
     }
 }

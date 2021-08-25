@@ -22,11 +22,11 @@ public class BaseCredit {
         return paymentGraph;
     }
 
-    public Double calculateOverpayment() {
-        Double sum = 0d;
+    public double calculateOverpayment() {
+        double sum = 0d;
         for (Double monthPay : getMonthPayments()) {
             sum += monthPay;
         }
-        return sum - this.amount;
+        return (sum - this.amount);
     }
 }
