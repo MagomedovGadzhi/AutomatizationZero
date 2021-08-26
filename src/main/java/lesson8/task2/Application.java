@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class Application {
     public static void main(String[] args) {
-        for (int groupSize = 10; groupSize < 30; groupSize++) {
+        for (int groupSize = 10; groupSize <= 30; groupSize++) {
             int personDuplicateCount = 0;
             for (int iterationCounts = 0; iterationCounts < 100000; iterationCounts++) {
                 Set<Person> persons = new HashSet<>();
