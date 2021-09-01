@@ -22,7 +22,7 @@ public class FileHelper {
     }
 
     private static String parse(String value) {
-        String defaultValue = "\"" + value + "\""; // defaultValue - тип String, если не попадет под другие критерии, возвращаем его
+        String defaultValue = "\"" + value + "\"";
         if (value.equals("null")) return null;
         if (value.equals("")) return "[]";
         if (value.contains(".")) {
