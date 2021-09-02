@@ -1,0 +1,12 @@
+Зарплатная ведомость.
+uuid: J9Shf6-bVjF-u5aI-pgA9-j7HbCq7Lq80j
+
+Время операции: 04.09.2021 01:51:33.
+
+Список сотрудников:
+RvpVkVrArewH AAPlZdgZKUmW, 1630 022119, 25774,10
+bQDOcGMQOBdu OIQJBVndLOMJ, 1951 182381, 31800,15
+AALHoIpduUON GZVLOxztUifl, 5191 406529, 27378,29
+VgshkRltLTsa iYJOvWUeRqOF, 7154 234557, 33161,74
+DCAzOtsVXCfC oIBgWMcUkdeR, 2541 490807, 17629,45
+Общая сумма: 135743,71
