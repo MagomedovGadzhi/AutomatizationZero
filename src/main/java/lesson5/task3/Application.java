@@ -21,5 +21,4 @@ public class Application {
         System.out.printf("Из %d операций деления %d было выполнено с ошибкой", total, exceptionCount);
 
     }
-
 }
