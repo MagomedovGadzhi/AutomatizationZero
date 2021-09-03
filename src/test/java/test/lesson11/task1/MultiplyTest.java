@@ -1,4 +1,4 @@
-package test.lesson10.task1;
+package test.lesson11.task1;
 
 import lesson11.task1.Calculator;
 import org.junit.jupiter.api.Assertions;
