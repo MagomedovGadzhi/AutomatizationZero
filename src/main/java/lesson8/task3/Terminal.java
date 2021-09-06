@@ -8,7 +8,7 @@ public abstract class Terminal implements TopUpBalance {
 
     @Override
     public void balanceUp(String telephoneNumber, double sum) {
-        if (sum<=0) {
+        if (sum <= 0) {
             System.out.println("Сумма пополнения меньше либо равна 0");
             return;
         }

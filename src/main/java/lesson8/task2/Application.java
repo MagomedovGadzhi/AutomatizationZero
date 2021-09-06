@@ -1,7 +1,5 @@
 package lesson8.task2;
 
-import lesson8.task1.Person;
-
 import java.util.HashSet;
 import java.util.Set;
 

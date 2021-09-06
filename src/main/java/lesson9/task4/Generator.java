@@ -21,16 +21,22 @@ public class Generator {
             switch (new Random().nextInt(6)) {
                 case 0:
                     order.add(new Meat());
+                    break;
                 case 1:
                     order.add(new Fish());
+                    break;
                 case 2:
                     order.add(new Rice());
+                    break;
                 case 3:
                     order.add(new Buckwheat());
+                    break;
                 case 4:
                     order.add(new Coffee());
+                    break;
                 case 5:
                     order.add(new Tea());
+                    break;
             }
         }
         return order;
