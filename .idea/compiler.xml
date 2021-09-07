@@ -9,5 +9,8 @@
         <module name="Automatization" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Automatization" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

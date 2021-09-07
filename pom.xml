@@ -8,14 +8,29 @@
     <artifactId>AutomatizationZero</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-            <junit.version>5.8.0-M1</junit.version>
+        <junit.version>5.8.0-M1</junit.version>
+        <apache.poi.version>5.0.0</apache.poi.version>
+        <apache.poi-ooxml.version>5.0.0</apache.poi-ooxml.version>
     </properties>
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${apache.poi.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${apache.poi-ooxml.version}</version>
         </dependency>
     </dependencies>
 
